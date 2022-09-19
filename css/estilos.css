@@ -934,8 +934,8 @@ body {
     font-size: 35px;
     margin: 50px 0 50px 0;
   }
-  .sect5__map__container {
-    border: 7px solid #dfe9ee;
+  .sect4__video__container {
+    border: 7px solid #344957;
     margin: 0 10% 10% 10%;
     width: 80%;
     height: 425px;
@@ -944,8 +944,8 @@ body {
     min-height: auto;
     height: auto;
   }
-  .sect4__video__container {
-    border: 7px solid #344957;
+  .sect5__map__container {
+    border: 7px solid #dfe9ee;
     margin: 0 10% 10% 10%;
     width: 80%;
     height: 425px;
