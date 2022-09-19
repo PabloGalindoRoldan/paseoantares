@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- configuracion de pagina  -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Locales en alquiler en el Paseo comercial Antares, primera bajada de Las grutas">
+    <meta name="keywords" content="alquiler, local, comercial, las grutas, precio, frente al mar">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Mochiy+Pop+One&family=Quicksand:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <title>Paseo Antares</title>
+</head>
+<!-- termina configuracion de pagina  -->
+
+<body>
+    <!-- arranca el header  -->
+    <section class="sec1">
+        <header class="iheader">
+            <div class="iheader__logo" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-out"
+                data-aos-duration="800">
+                <img src="./multimedia/logo_final.png" alt="logo" class="logo__img">
+                <h1 class="iheader__logo__text">Paseo Antares</h1>
+            </div>
+            <nav class="iheader__navbar" data-aos="fade-up" data-aos-anchor-placement="center-center"
+                data-aos-duration="800" data-aos-delay="500">
+                <ul class="iheader__navbar__ul">
+                    <li class="iheader__navbar__ul__item"><a href="#">Home</a></li>
+                    <li class="iheader__navbar__ul__item"><a href="./paginas/locales.html">Locales</a></li>
+                    <li class="iheader__navbar__ul__item"><a href="./paginas/servicios.html">Servicios</a></li>
+                    <li class="iheader__navbar__ul__item"><a href="./paginas/galeria.html">Galeria</a></li>
+                    <li class="iheader__navbar__ul__item"><a href="./paginas/contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <hr class="hrleft" data-aos="fade-up" data-aos-anchor-placement="center-center" data-aos-duration="800"
+                data-aos-delay="500">
+            <hr class="hrright" data-aos="fade-up" data-aos-anchor-placement="center-center" data-aos-duration="800"
+                data-aos-delay="500">
+            <!-- arranca el menu hamburguesa  -->
+            <div class="hamburger-menu">
+                <input id="menu__toggle" type="checkbox" />
+                <label class="menu__btn" for="menu__toggle">
+                    <span></span>
+                </label>
+
+                <ul class="menu__box">
+                    <li><a class="menu__item" href="#">Home</a></li>
+                    <li><a class="menu__item" href="./paginas/locales.html">Locales</a></li>
+                    <li><a class="menu__item" href="./paginas/servicios.html">Servicios</a></li>
+                    <li><a class="menu__item" href="./paginas/galeria.html">Galeria</a></li>
+                    <li><a class="menu__item" href="./paginas/contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <!-- termina el menu hamburguesa  -->
+        </header>
+    </section>
+    <!-- termina el header  -->
+    <main>
+        <!-- arranca la segunda seccion  -->
+        <section class="mainsect sec2">
+            <h2 data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-out" data-aos-duration="800">
+                Locales comerciales en alquiler en Las Grutas</h2>
+            <img src="./multimedia/antares_15.jpg" alt="imagen1" class="sec2__img"
+                id="sec2__ubicacion__img">
+            <div class="sec2__ubicacion__texto">
+                <h3>Ubicacion</h3>
+                <p>Los locales se encuentran en una de las zonas mas concurridas de las grutas, a metros de la primera
+                    bajada, con acceso desde las calles Villa Regina, Pomona y el paseo de los Artesanos.</p>
+            </div>
+            <img src="./multimedia/antares_11.jpg" alt="imagen2" class="sec2__img" id="sec2__costo__img">
+            <div class="sec2__costo__texto">
+                <h3>Costo</h3>
+                <p>Los locales se ofrecen a unos de los menores costos de todo el balneario de Las Grutas.</p>
+            </div>
+            <img src="./multimedia/antares_14.jpg" alt="imagen3" class="sec2__img" id="sec2__experiencia__img">
+            <div class="sec2__experiencia__texto">
+                <h3>Experiencia</h3>
+                <p>Nos encontramos en el lugar desde hace mas de 50 años, siendo uno de los primeros paseos comerciales
+                    de toda Las Grutas</p>
+            </div>
+        </section>
+        <!-- termina la segunda seccion  -->
+
+        <!-- arranca la tercera seccion  -->
+        <section class="mainsect sect3">
+            <h2 data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-out" data-aos-duration="800">
+                Locales Disponibles</h2>
+
+            <!-- Carousel -->
+            <div id="cardCarousel" class="carousel slide cardcarousel" data-bs-ride="carousel">
+
+                <!-- Indicators/dots -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#cardCarousel" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#cardCarousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#cardCarousel" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#cardCarousel" data-bs-slide-to="3"></button>
+                    <button type="button" data-bs-target="#cardCarousel" data-bs-slide-to="4"></button>
+                </div>
+
+                <!-- The slideshow/carousel -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="sect3__tarjeta tarjeta1">
+                            <a href="./paginas/locales.html#hl1"><img src="./multimedia/local1_02.jpg" alt="img"
+                                    class="sect3__tarjeta__img"></a>
+                            <div class="row tarjeta__texto">
+                            <p class="col-3 tarjeta__texto__item">Local 1</p>
+                            <p class="col-3 tarjeta__texto__item">9mts2</p>
+                            <p class="col-3 tarjeta__texto__item">acceso interior</p>
+                            <p class="col-3 tarjeta__texto__item">-NO DISPONIBLE-</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="sect3__tarjeta tarjeta2">
+                            <a href="./paginas/locales.html#hl2"><img src="./multimedia/local3_01.jpg" alt="img"
+                                    class="sect3__tarjeta__img"></a>
+                            <div class="row tarjeta__texto">
+                            <p class="col-3 tarjeta__texto__item">Local 3</p>
+                            <p class="col-3 tarjeta__texto__item">18mts2</p>
+                            <p class="col-3 tarjeta__texto__item">acceso interior</p>
+                            <p class="col-3 tarjeta__texto__item">-NO DISPONIBLE-</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="sect3__tarjeta tarjeta3">
+                            <a href="./paginas/locales.html#hl3"><img src="./multimedia/local5_02.jpg" alt="img"
+                                    class="sect3__tarjeta__img"></a>
+                            <div class="row tarjeta__texto">
+                            <p class="col-3 tarjeta__texto__item">Local 5</p>
+                            <p class="col-3 tarjeta__texto__item">18mts2</p>
+                            <p class="col-3 tarjeta__texto__item">acceso interior</p>
+                            <p class="col-3 tarjeta__texto__item">-NO DISPONIBLE-</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="sect3__tarjeta tarjeta4">
+                            <a href="./paginas/locales.html#hl4"><img src="./multimedia/local8_02.jpg" alt="img"
+                                    class="sect3__tarjeta__img"></a>
+                            <div class="row tarjeta__texto">
+                            <p class="col-3 tarjeta__texto__item">Local 7</p>
+                            <p class="col-3 tarjeta__texto__item">40mts2</p>
+                            <p class="col-3 tarjeta__texto__item">acceso interior y exterior</p>
+                            <p class="col-3 tarjeta__texto__item">-NO DISPONIBLE-</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="sect3__tarjeta tarjeta5">
+                            <a href="./paginas/locales.html#hl5"><img src="./multimedia/local10_new.jpg" alt="img"
+                                    class="sect3__tarjeta__img"></a>
+                            <div class="row tarjeta__texto">
+                            <p class="col-3 tarjeta__texto__item">Local 10</p>
+                            <p class="col-3 tarjeta__texto__item">15mts2</p>
+                            <p class="col-3 tarjeta__texto__item">acceso interior y exterior</p>
+                            <p class="col-3 tarjeta__texto__item">-NO DISPONIBLE-</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Left and right controls/icons -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#cardCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#cardCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+
+        </section>
+        <!-- termina la tercera seccion  -->
+
+        <!-- arranca la cuarta seccion  -->
+        <section class="mainsect sect4">
+            <h2 data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-out"
+            data-aos-duration="800">Video Promocional</h2>
+            <div class="sect5__video__container">
+                <iframe id="indexvideo" src="https://www.youtube.com/embed/HFmYG7Gx9OU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+        <!-- termina la cuarta seccion  -->
+        <!-- arranca la quinta seccion  -->
+        <section class="mainsect sect5">
+            <h2 data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-out"
+            data-aos-duration="800">Ubicación</h2>
+            <div class="sect4__map__container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d266.918124464651!2d-65.08700816645216!3d-40.80964468858839!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95fbcccbc72bd9b7%3A0xb79ffc94aa2d36df!2sHotel%20Antares!5e0!3m2!1ses-419!2sar!4v1659353343608!5m2!1ses-419!2sar"
+                    style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                    id="indexmap"></iframe>
+            </div>
+        </section>
+        <!-- termina la quinta seccion  -->
+    </main>
+    <!-- arranca el footer  -->
+    <footer class="footer indexfooter">
+        <div class="footer__contacto">
+            <h3>Contacto</h3>
+            <ul>
+                <li>Tel/Wspp: +54 9 2920-668158</li>
+                <li>Email: edgardiaz0406@hotmail.com</li>
+                <li>Direccion: Villa Regina 624, Las Grutas, Rio Negro</li>
+            </ul>
+        </div>
+        <div class="footer__logo">
+            <img src="./multimedia/logo_final.png" alt="logo" class="footer__logo__img">
+            <h2>Paseo Antares</h2>
+        </div>
+        <div class="footer__social">
+            <a href="https://www.facebook.com/"><img src="./multimedia/icons8-facebook-nuevo-50.png"
+                    alt="icono facebook" /></a>
+            <a href="https://www.instagram.com/"><img src="./multimedia/icons8-instagram-50.png"
+                    alt="icono instagram" /></a>
+            <a href="https://www.tripadvisor.com.ar/"><img src="./multimedia/icons8-tripadvisor-50.png"
+                    alt="icono tripadvisor" /></a>
+            <a href="https://www.youtube.com/watch?v=HFmYG7Gx9OU&ab_channel=Blopah"><img src="./multimedia/icons8-youtube-50.png" alt="icono youtube" /></a>
+        </div>
+        <a href="#" class="up"><i class="fa-solid fa-angle-up"></i></a>
+    </footer>
+    <!-- termina el footer  -->
+
+    <!-- scripts  -->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+
+    <!-- /scripts  -->
+</body>
+
+</html>
