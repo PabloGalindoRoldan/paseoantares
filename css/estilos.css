@@ -332,10 +332,11 @@ body {
 
 .footer__social {
   width: 100%;
-  padding: 0 20%;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  justify-content: space-between;
+  padding: 0 150px 0 50px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .up {
