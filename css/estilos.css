@@ -14,7 +14,7 @@ body {
   background-color: #dfe9ee;
 }
 
-.width, .gsec, .lsec1 img, .header, #indexvideo, #indexmap, .tarjeta__texto, .sect3__tarjeta__img, .sect3__tarjeta a, .sect3__tarjeta {
+.width, .gsec, .lsec1 img, .header, #indexmap, #indexvideo, .tarjeta__texto, .sect3__tarjeta__img, .sect3__tarjeta a, .sect3__tarjeta {
   width: 100%;
 }
 
@@ -263,13 +263,13 @@ body {
   font-family: Josefin Sans, Geneva, Tahoma, sans-serif;
 }
 
-.sect4__map__container {
-  border: 7px solid #dfe9ee;
+.sect4__video__container {
+  border: 7px solid #344957;
   margin: 0 25% 3% 25%;
   height: 25vw;
 }
 
-#indexmap {
+#indexvideo {
   height: 100%;
 }
 
@@ -278,13 +278,13 @@ body {
   padding-bottom: 7%;
 }
 
-.sect5__video__container {
-  border: 7px solid #344957;
+.sect5__map__container {
+  border: 7px solid #dfe9ee;
   margin: 0 25% 3% 25%;
   height: 25vw;
 }
 
-#indexvideo {
+#indexmap {
   height: 100%;
 }
 
@@ -354,7 +354,8 @@ body {
   font-size: 30px;
 }
 
-/*----------------------LOCALES----------------------*/
+/*-------------------TERMINA INDEX-------------------*/
+/*-------------------PAGINA LOCALES------------------*/
 .header {
   background-color: #344957;
   color: #dfe9ee;
@@ -530,7 +531,8 @@ body {
   width: 100%;
 }
 
-/*-----------------------SERVICIOS---------------------*/
+/*---------------------TERMINA PAG LOCALES-------------------*/
+/*-------------------ARRANCA PAG SERVICIOS---------------------*/
 .ssect {
   margin-top: 22vh;
   margin-left: 25%;
@@ -610,7 +612,8 @@ body {
   grid-area: sp5;
 }
 
-/*--------------------GALERIA-----------------------*/
+/*-------------------TERMINA PAG SERVICIOS---------------------*/
+/*--------------------ARRANCA PAG GALERIA-----------------------*/
 .gsec {
   margin-top: 18vh;
   height: auto;
@@ -676,7 +679,8 @@ body {
   background-image: url(../multimedia/antares_09.jpg);
 }
 
-/*-----------------------CONTACTO-------------------*/
+/*--------------------ATERMINA PAG GALERIA-----------------------*/
+/*--------------------ARRANCA PAGINA CONTACTO-------------------*/
 .csect {
   margin-top: 22vh;
 }
@@ -738,8 +742,8 @@ body {
   cursor: pointer;
 }
 
-/*----------------------MEDIA QUERYS----------------------*/
-/*index*/
+/*--------------------TERMINA PAGINA CONTACTO-------------------*/
+/*-------------------------------------------------------MEDIA QUERYS----------------------------------------------------------*/
 @media only screen and (max-width: 1600px) {
   .header__logo {
     width: 40%;
@@ -765,6 +769,7 @@ body {
   }
 }
 @media only screen and (max-width: 960px) {
+  /*index*/
   .iheader {
     display: block;
     height: 50vh;
@@ -791,7 +796,7 @@ body {
   hr {
     display: none;
   }
-  /*HAMBURGUER*/
+  /* arranca HAMBURGUER*/
   .hamburger-menu {
     display: block;
   }
@@ -867,7 +872,7 @@ body {
   .menu__item:hover {
     background-color: #CFD8DC;
   }
-  /* </HAMBURGUER> */
+  /* termina HAMBURGUER */
   .sec2 {
     height: auto;
     grid-template-columns: 1fr 1fr 1fr;
@@ -993,7 +998,7 @@ body {
   .header__logo {
     display: none;
   }
-  /* LOCALES */
+  /* locales */
   .lsec1 {
     height: auto;
     margin-top: 7vh;
@@ -1026,7 +1031,7 @@ body {
     padding: 20px;
     text-align: left;
   }
-  /*SERVICIOS*/
+  /*servicios*/
   .ssect {
     height: auto;
     width: auto;
@@ -1061,7 +1066,7 @@ body {
     grid-gap: 20px;
     padding: 20px;
   }
-  /*---------------contacto---------------*/
+  /*contacto*/
   .csect {
     margin-top: 9vh;
   }

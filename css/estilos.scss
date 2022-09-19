@@ -1,3 +1,4 @@
+//formateo general
 * {
     margin: 0;
     padding: 0;
@@ -36,6 +37,11 @@ body {
     width: 100%;
 }
 
+//termina el formateo
+
+//------------index---------------
+
+//primera seccion
 .sec1 {
     background-image: url(../multimedia/antares_08_var2.jpg);
     height: 100vh;
@@ -130,6 +136,7 @@ body {
     border-bottom: solid 3px $color5;
 }
 
+//segunda seccion
 .sec2 {
     height: auto;
     min-height: 100vh;
@@ -208,6 +215,7 @@ body {
     justify-content: center;
 }
 
+//tercera seccion
 .sect3 {
     height: auto;
     min-height: 100vh;
@@ -273,6 +281,8 @@ body {
     border: none;
 }
 
+//cuarta seccion (video)
+
 .sect4 {
     @extend .sect3;
     min-height: auto;
@@ -289,7 +299,26 @@ body {
     }
 }
 
-.sect4__map__container {
+.sect4__video__container {
+    border: 7px solid $color1;
+    margin: 0 25% 3% 25%;
+    height: 25vw;
+} 
+
+#indexvideo {
+    @extend .width;
+    height: 100%;
+}
+
+//quinta seccion (mapa)
+
+.sect5 {
+    @extend .sect3;
+    min-height: auto;
+    padding-bottom: 7%;
+}
+
+.sect5__map__container {
     border: 7px solid $color2;
     margin: 0 25% 3% 25%;
     height: 25vw;
@@ -300,22 +329,7 @@ body {
     height: 100%;
 }
 
-.sect5{
-    @extend .sect3;
-    min-height: auto;
-    padding-bottom: 7%;
-}
-
-.sect5__video__container{
-    border: 7px solid $color1;
-    margin: 0 25% 3% 25%;
-    height: 25vw;
-}
-
-#indexvideo{
-    @extend .width;
-    height: 100%;
-}
+//index footer
 
 .footer {
     @include align (center, center);
@@ -326,7 +340,7 @@ body {
     color: $color3;
 }
 
-.indexfooter{
+.indexfooter {
     border-top: solid 5px $color2;
 }
 
@@ -349,6 +363,7 @@ body {
     display: grid;
     grid-template-rows: 1fr 1fr;
     @include align (center, center);
+
     h2 {
         font-size: 40px;
     }
@@ -384,9 +399,11 @@ body {
     border: 2px solid $color3;
     font-size: 30px;
 }
+/*-------------------TERMINA INDEX-------------------*/
 
-/*----------------------LOCALES----------------------*/
+/*-------------------PAGINA LOCALES------------------*/
 
+//header
 .header {
     background-color: $color1;
     color: $color2;
@@ -441,6 +458,8 @@ body {
     }
 }
 
+//seccion principal de la pagina locales
+
 .lsec1 {
     height: auto;
     margin-top: 20vh;
@@ -486,7 +505,7 @@ body {
         font-size: 40px;
     }
 
-    p{
+    p {
         align-self: start;
     }
 }
@@ -570,19 +589,22 @@ body {
     grid-area: pl5;
 }
 
-.modal-body{
+.modal-body {
     background-color: $color4;
 }
 
-.modalimgwrapper{
-    img{
-    height: auto;
-    width: 100%;
+.modalimgwrapper {
+    img {
+        height: auto;
+        width: 100%;
     }
 }
 
+/*---------------------TERMINA PAG LOCALES-------------------*/
 
-/*-----------------------SERVICIOS---------------------*/
+/*-------------------ARRANCA PAG SERVICIOS---------------------*/
+
+//seccion principal pag servicios
 
 .ssect {
     margin-top: 22vh;
@@ -675,8 +697,11 @@ body {
     grid-area: sp5;
 }
 
+/*-------------------TERMINA PAG SERVICIOS---------------------*/
 
-/*--------------------GALERIA-----------------------*/
+/*--------------------ARRANCA PAG GALERIA-----------------------*/
+
+//seccion principal galeria
 
 .gsec {
     margin-top: 18vh;
@@ -747,7 +772,12 @@ body {
     background-image: url(../multimedia/antares_09.jpg);
 }
 
-/*-----------------------CONTACTO-------------------*/
+/*--------------------ATERMINA PAG GALERIA-----------------------*/
+
+/*--------------------ARRANCA PAGINA CONTACTO-------------------*/
+
+
+//seccion principal contacto
 
 .csect {
     margin-top: 22vh;
@@ -805,20 +835,22 @@ body {
     cursor: pointer;
 }
 
-/*----------------------MEDIA QUERYS----------------------*/
+/*--------------------TERMINA PAGINA CONTACTO-------------------*/
 
-/*index*/
+/*-------------------------------------------------------MEDIA QUERYS----------------------------------------------------------*/
 
-@media only screen and (max-width: 1600px){
+//MQ MAX WIDTH 1600PX
 
+@media only screen and (max-width: 1600px) {
+    
     .header__logo {
         width: 40%;
     }
-    
+
     .header__navbar {
         width: 60%;
     }
-    
+
     .header__navbar__ul {
         a {
             font-size: 20px;
@@ -827,17 +859,20 @@ body {
     }
 }
 
-@media only screen and (max-width: 1100px){
+//TERMINA MQ MAX WIDTH 1600PX
 
-    
+//ARRANCA MQ MAX WIDTH 1100PX
+
+@media only screen and (max-width: 1100px) {
+
     .header__logo {
         width: 25%;
     }
-    
+
     .header__navbar {
         width: 75%;
     }
-    
+
     .header__navbar__ul {
         a {
             font-size: 20px;
@@ -846,8 +881,13 @@ body {
     }
 }
 
+//TERMINA MQ MAX WIDTH 1100PX
+
+//ARRANCA MQ MAX WIDTH 960PX
+
 @media only screen and (max-width: 960px) {
 
+    /*index*/
     .iheader {
         display: block;
         height: 50vh;
@@ -880,7 +920,7 @@ body {
         display: none;
     }
 
-    /*HAMBURGUER*/
+    /* arranca HAMBURGUER*/
 
     .hamburger-menu {
         display: block;
@@ -970,8 +1010,9 @@ body {
         background-color: #CFD8DC;
     }
 
-    /* </HAMBURGUER> */
+    /* termina HAMBURGUER */
 
+    //seccion 2
     .sec2 {
         height: auto;
         grid-template-columns: 1fr 1fr 1fr;
@@ -1027,6 +1068,7 @@ body {
         text-align: left;
     }
 
+    //seccion 3
     .sect3 {
         height: auto;
 
@@ -1041,6 +1083,7 @@ body {
         margin: 0 10%;
     }
 
+    //seccion 4
     .sect4 {
         min-height: auto;
         height: auto;
@@ -1058,24 +1101,26 @@ body {
         height: 425px;
     }
 
-    .sect5{
+    //seccion5
+    .sect5 {
         min-height: auto;
         height: auto;
     }
-    
-    .sect5__video__container{
+
+    .sect5__video__container {
         border: 7px solid $color1;
         margin: 0 10% 10% 10%;
         width: 80%;
         height: 425px;
     }
 
+    //footer
+
     .footer {
         @include align (center, center);
         height: auto;
         display: flex;
         flex-direction: column;
-        // grid-template-columns: 1fr 1fr;
         background-color: $color1;
         color: $color3;
         width: 100%;
@@ -1089,8 +1134,8 @@ body {
         padding-left: 0px;
         text-align: center;
     }
-    
-    .footer__logo{
+
+    .footer__logo {
         display: none;
     }
 
@@ -1104,7 +1149,6 @@ body {
         padding: 0;
 
         img {
-            // height: 30px;
             width: auto;
             margin: 6px;
         }
@@ -1128,7 +1172,7 @@ body {
         display: none;
     }
 
-    /* LOCALES */
+    /* locales */
 
     .lsec1 {
         height: auto;
@@ -1185,7 +1229,7 @@ body {
         }
     }
 
-    /*SERVICIOS*/
+    /*servicios*/
 
     .ssect {
         height: auto;
@@ -1249,7 +1293,7 @@ body {
         padding: 20px;
     }
 
-/*---------------contacto---------------*/
+    /*contacto*/
 
     .csect {
         margin-top: 9vh;
@@ -1259,6 +1303,10 @@ body {
         margin: 20px 5% 5vh 5%;
     }
 }
+
+//TERMINA MQ MAX WIDTH 960PX
+
+//ARRANCA MQ MAX WIDTH 450PX
 
 @media only screen and (max-width: 450px) {
 
